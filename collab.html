@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #0f0f1c;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: #1a1a2e;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #111122;
+      border: 1px solid #555;
+      border-radius: 5px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 15px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 15px;
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    a {
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 60px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #2e2e4d;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Registration Form</h2>
+    <p>Please fill out this form with the required information</p>
+
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label><input type="radio" name="info" value="program"> Program</label>
+    <label><input type="radio" name="info" value="year"> Year Level</label>
+
+    <label>
+      <input type="checkbox" name="terms" required>
+      I accept the <a href="#">terms and conditions</a>
+    </label>
+
+    <small>
+      The school ensures data protection by adhering to relevant privacy laws, applying encryption, and requiring informed consent before any external sharing.
+    </small>
+
+    <label for="profile-pic">Upload a profile picture:</label>
+    <input type="file" id="profile-pic" name="profile-pic">
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="specialization">Specialization?</label>
+    <select id="specialization" name="specialization">
+      <option value="">(select one)</option>
+      <option value="webdev">Web Development</option>
+      <option value="data">Data Science</option>
+      <option value="ai">Artificial Intelligence</option>
+    </select>
+
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" placeholder="I like coding on the beach..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
