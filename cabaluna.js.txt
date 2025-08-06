@@ -1,0 +1,25 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><script>document.getElementById('registration-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // You can add more complex validation here if needed
+  const firstName = document.getElementById('first-name').value.trim();
+  const lastName = document.getElementById('last-name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const specialization = document.getElementById('specialization').value;
+
+  if (firstName && lastName && email && password && specialization) {
+    // Show success message
+    document.getElementById('success-message').style.display = 'block';
+
+    // Reset form after showing success
+    this.reset();
+
+    // Hide success message after 3 seconds
+    setTimeout(() => {
+      document.getElementById('success-message').style.display = 'none';
+    }, 3000);
+  } else {
+    alert("Please fill in all required fields.");
+  }
+});</script>
