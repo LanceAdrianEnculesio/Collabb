@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registration Form</title>
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="collab.css">
 </head>
 <body>
 
@@ -22,6 +22,31 @@
 
     <label for="password">Create Password:</label>
     <input type="password" id="password" required>
+
+    <!-- SHS Strand Selection -->
+    <label for="shs-strand">SHS Strand:</label>
+    <select id="shs-strand" size="5">
+      <option value="STEM">STEM (Science, Technology, Engineering, Mathematics)</option>
+      <option value="ABM">ABM (Accountancy, Business, and Management)</option>
+      <option value="HUMSS">HUMSS (Humanities and Social Sciences)</option>
+      <option value="GAS">GAS (General Academic Strand)</option>
+      <option value="TVL">TVL (Technical-Vocational-Livelihood)</option>
+    </select>
+
+    <!-- College Course Selection -->
+    <label for="college-course">College Course:</label>
+    <select id="college-course" size="5">
+      <option value="BSIT">BSIT (Information Technology)</option>
+      <option value="BSCS">BSCS (Computer Science)</option>
+      <option value="BSBA">BSBA (Business Administration)</option>
+      <option value="BSA">BSA (Accountancy)</option>
+      <option value="BSN">BSN (Nursing)</option>
+      <option value="BSED">BSED (Education)</option>
+      <option value="BSCRIM">BSCRIM (Criminology)</option>
+      <option value="BSTM">BSTM (Tourism Management)</option>
+      <option value="BSECE">BSECE (Electronics Engineering)</option>
+      <option value="BSCE">BSCE (Civil Engineering)</option>
+    </select>
 
     <label><input type="radio" name="info" value="program"> Program</label>
     <label><input type="radio" name="info" value="year"> Year Level</label>
@@ -55,6 +80,6 @@
     <input type="submit" value="Submit">
   </form>
 
-  <script src="script.js"></script> <!-- Connected JavaScript -->
+  <script src="collab.js"></script>
 </body>
 </html>
